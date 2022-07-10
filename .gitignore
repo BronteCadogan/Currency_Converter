@@ -1,0 +1,5 @@
+#ignore the makefile
+makefile
+
+#ignore the vscode folder
+.vscode
