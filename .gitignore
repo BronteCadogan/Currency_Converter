@@ -1,5 +1,7 @@
 #ignore the makefile
-makefile
+main.exe
 
 #ignore the vscode folder
 .vscode
+
+.gitignore
