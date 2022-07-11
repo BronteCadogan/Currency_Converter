@@ -6,6 +6,7 @@
 void helloWorld();
 
 
+
 class Currency
 {
 private:
@@ -25,8 +26,10 @@ public:
     //getter
     int getCurrencyAmnt();
     std::string getCurrencyName();
-
 };
 
+    //currency selection
+
+    Currency userEnterCurrency(int option);
 
 
