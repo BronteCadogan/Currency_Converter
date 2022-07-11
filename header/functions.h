@@ -2,11 +2,6 @@
 #include <iostream>
 #include <string>
 
-
-void helloWorld();
-
-
-
 class Currency
 {
 private:
@@ -28,8 +23,10 @@ public:
     std::string getCurrencyName();
 };
 
-    //currency selection
 
-    Currency userEnterCurrency(int option);
+    //currency selection
+    Currency userEnterCurrency(int option, Currency currencyObj[10]);
+
+    void helloWorld();
 
 

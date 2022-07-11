@@ -3,25 +3,55 @@
 
 Currency userEnterCurrency(int option)
 {
-
-    bool trueLoop;
-    
-      //Array of Currency Objects, I.E. Array of Names and values
     Currency currencyObj[10];
-    trueLoop = true;
-    // std::cout << "You have " << currencyObj[0].getCurrencyAmnt() << " " << currencyObj[0].getCurrencyName() << "\n";
+    bool trueLoop;
+    std::string currencyName;
+    int currencyAmount;
+    std::string numero;
+    int num = 11;
 
         if(option == 1)
         {
-       
+            //single currency is entered
+            std::cout << "Enter your currnecy name\n";
+            std::cin >> currencyName;
+            currencyObj[0].setCurrencyName(currencyName);
+
+
+            std::cout << "Enter the amount you have\n";
+            std::cin >> currencyAmount;
+            currencyObj[0].setCurrencyAmnt(currencyAmount);
         }
         else if(option == 2)
         {
            
+            while (num > 10)
+            {
+                std::cout << "How many do you want to enter, max is 10\n";
+                getline(std::cin,numero);
+                //convert string to integer
+                num = std::stoi(numero); 
+                if(num > 10)
+                {
+                     std::cout << "The max is 10, enter a smaller number\n";
+                }
+            }
+
+            for(int i = 0; i < num; i++)
+            {
+                std::cout << "Enter your currnecy name\n";
+                std::cin >> currencyName;
+                currencyObj[i].setCurrencyName(currencyName);
+
+                std::cout << "Enter the amount you have\n";
+                std::cin >> currencyAmount;
+                currencyObj[i].setCurrencyAmnt(currencyAmount);
+            }
+           
         }
         else if (option == 3)
         {
-      
+            trueLoop = false;
         }
         else
         {
