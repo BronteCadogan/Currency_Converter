@@ -4,7 +4,23 @@
 
 int main(int argc, char *argv[])
 {
-    helloWorld();
+    //Array of Currency Objects, I.E. Array of Names and values
+    Currency currencyObj;
+    //object vector
+    std::vector<Currency> currencies;
+    
+    createCurrs(currencies, currencyObj);
+    
+   //Can output object props here11
+//    std::cout << currencyObj;
+
+   std::cout << "There are " << currencies.size() << " currencies saved " << std::endl;
    
+    std::cout << currencies << std::endl;
+
+    std::cout << "confirm your exit" ;
+
+    int xyz;
+    std::cin >> xyz;
     return 0;
 }
