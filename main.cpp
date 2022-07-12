@@ -10,9 +10,7 @@ int main(int argc, char *argv[])
     std::vector<Currency> currencies;
     
     createCurrs(currencies, currencyObj);
-    
-   //Can output object props here11
-//    std::cout << currencyObj;
+
 
    std::cout << "There are " << currencies.size() << " currencies saved " << std::endl;
    
