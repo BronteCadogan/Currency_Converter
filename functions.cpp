@@ -1,9 +1,9 @@
 #include "functions.h"
 
 
-Currency userEnterCurrency(int option)
+Currency userEnterCurrency(int option, Currency currencyObj[10])
 {
-    Currency currencyObj[10];
+    // Currency currencyObj[10];
     bool trueLoop;
     std::string currencyName;
     int currencyAmount;
@@ -63,7 +63,7 @@ return currencyObj[10];
    
 }
 
-void helloWorld()
+void helloWorld(Currency currencyObj[10])
 {
 
     std::string selection;
@@ -78,7 +78,7 @@ void helloWorld()
     selectionInt = std::stoi(selection); 
 
     // call user enter currency
-    userEnterCurrency(selectionInt);
+    userEnterCurrency(selectionInt, currencyObj);
 
 }
 

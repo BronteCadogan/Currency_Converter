@@ -27,6 +27,6 @@ public:
     //currency selection
     Currency userEnterCurrency(int option, Currency currencyObj[10]);
 
-    void helloWorld();
+    void helloWorld(Currency currencyObj[10]);
 
 
