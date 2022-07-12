@@ -5,14 +5,18 @@
 int main(int argc, char *argv[])
 {
     //Array of Currency Objects, I.E. Array of Names and values
-    Currency currencyObj[10];
-    helloWorld(currencyObj);
-   int arrSize = sizeof(currencyObj);
+    Currency currencyObj;
+    //object vector
+    std::vector<Currency> currencies;
+    
+    createCurrs(currencies, currencyObj);
+    
+   //Can output object props here11
+//    std::cout << currencyObj;
 
-    for(int i = 0; i < arrSize; i++)
-    {
-        std::cout << "You have " << currencyObj[i].getCurrencyAmnt() << " " << currencyObj[i].getCurrencyName() << "\n";
-    }
+   std::cout << "There are " << currencies.size() << " currencies saved " << std::endl;
+   
+    std::cout << currencies << std::endl;
 
     std::cout << "confirm your exit" ;
 

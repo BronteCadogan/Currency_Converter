@@ -1,32 +1,31 @@
+#pragma once    
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <ostream>
+#include <vector>
+#include <iterator>
+
 
 class Currency
 {
 private:
+public:
     int currencyAmnt;
     std::string currencyName;
-public:
-    //setter
-    void setCurrencyAmnt(int amount)
-    {   
-        currencyAmnt = amount;
-    }
-    void setCurrencyName(std::string name)
-    {
-        currencyName = name;
-    }
-
-    //getter
-    int getCurrencyAmnt();
-    std::string getCurrencyName();
 };
+   
+
+    //operator overload
+    std::ostream& operator<<(std::ostream& COUT, Currency& currObj);
 
 
-    //currency selection
-    Currency userEnterCurrency(int option, Currency currencyObj[10]);
+    //logic
+    void createCurrs(std::vector<Currency>& curr, Currency& currObj);
 
-    void helloWorld(Currency currencyObj[10]);
+    //overload
+    std::ostream& operator<<(std::ostream& OUT,  const std::vector<Currency>& vector);
 
+
+   
 
