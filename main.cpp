@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     std::cout << currencies << std::endl;
 
     std::cout << "confirm your exit" ;
-
+    std::cout << "Hasta La Vista";
     int xyz;
     std::cin >> xyz;
     return 0;
